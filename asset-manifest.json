@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/spa-final-project-memory-game-react/static/css/main.a9c3faf5.css",
+    "main.js": "/spa-final-project-memory-game-react/static/js/main.e34a3158.js",
+    "static/js/787.dee500a9.chunk.js": "/spa-final-project-memory-game-react/static/js/787.dee500a9.chunk.js",
+    "static/media/storch.jpg": "/spa-final-project-memory-game-react/static/media/storch.8b4fd2a3ccc8fe98d8ee.jpg",
+    "static/media/eule.jpg": "/spa-final-project-memory-game-react/static/media/eule.1595b82064583f4616cf.jpg",
+    "static/media/rotkehlchen.jpg": "/spa-final-project-memory-game-react/static/media/rotkehlchen.5f3d5e1c7b3c6bef40ea.jpg",
+    "static/media/sperling.jpg": "/spa-final-project-memory-game-react/static/media/sperling.14755f9683f15f8450b8.jpg",
+    "static/media/buchfink.jpg": "/spa-final-project-memory-game-react/static/media/buchfink.9e9ffbb5c54386401080.jpg",
+    "static/media/cover.jpg": "/spa-final-project-memory-game-react/static/media/cover.b1943925bf1b689f33d6.jpg",
+    "static/media/ente.jpg": "/spa-final-project-memory-game-react/static/media/ente.732671495f6634e43651.jpg",
+    "static/media/eisvogel.jpg": "/spa-final-project-memory-game-react/static/media/eisvogel.942dbdbd8dd05f8e248b.jpg",
+    "static/media/elster.jpg": "/spa-final-project-memory-game-react/static/media/elster.29b34ee7ffa1e174924f.jpg",
+    "index.html": "/spa-final-project-memory-game-react/index.html",
+    "main.a9c3faf5.css.map": "/spa-final-project-memory-game-react/static/css/main.a9c3faf5.css.map",
+    "main.e34a3158.js.map": "/spa-final-project-memory-game-react/static/js/main.e34a3158.js.map",
+    "787.dee500a9.chunk.js.map": "/spa-final-project-memory-game-react/static/js/787.dee500a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9c3faf5.css",
+    "static/js/main.e34a3158.js"
+  ]
+}
