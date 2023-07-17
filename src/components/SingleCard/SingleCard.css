@@ -1,0 +1,47 @@
+.card {
+    position: relative;
+  }
+  
+  .card img {
+    width: 100%;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 6px;
+  }
+
+
+/* Vorderseite der Karte - das Bild */
+
+  .card .front {
+    /* die Vorderseite liegt auf dem Bauch, also ist um 90grad gedreht */
+    transform: rotateX(90deg);
+    transition: all ease-in 0.2s;
+    /* position absolute, weil cards position relative ist, damit die Rückseite direkt über der Vorderseite der Karte liegt und nicht umgedreht */
+    position: absolute;
+  }
+
+  .flipped .front {
+    /* Wenn die Karte ausgewählt wurde, wird sie zurückgedreht um 90grad und so ist die Vorderseite sichtbar */
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+  }
+
+  /* Rückseite der Karte - das Cover */ 
+  /* Effekte zur UX Optimierung, um das Umdrehen der Karten zu visualisieren */
+
+  .card .back {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+  }
+
+  .flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+  }
+
+/* Effekt zum ausblenden gematchter Karten */
+  .card .matched {
+    transition: opacity 3s ease;
+    opacity: 0;
+  }
+
