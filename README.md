@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+## memory-game-react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+all used pictures are taken from [Unsplash](https://unsplash.com/) and are free to use! 
+thanks to 
 
-## Available Scripts
+#how the code works
 
-In the project directory, you can run:
+- imported the img-files and in an array of objects with the img-file for every bird and their names and setting matched as false in default
 
-### `npm start`
+- the shuffle card function: 
+    - load twice the object in the function via spread operator in these function, because for memory wie need two pairs of the same picture
+    - with the sort-method and Math.random, we mix the pictures randomly
+    - afterwards wie map them the cards for each card
+    - there are various state hooks:
+        - setChoiceOne and setChoiceTwo defined first of all as "null", to hide all cards
+        - setTurns is at the beginning "0", because it is a counter to count all turns during the game
+        - setBirdName is also "null" at the beginning, these hook is responsable to show the name of the bird, when two cards are matched
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- the handleChoice function:
+    - first: check if there was a first choice to allow the second choice
+    - the useEffect, which is connected to this function; it has a hook, that disables to unhide more than two cards on the same time to avoid cheating; it is true, when 2 cards are flipped
+    - the matching method between two cards works with a comparison between the source of the image-file, if they are equal = match (setCards --> matched:true); the Name of the bird will be showed
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- the resetTurn function:
+    - after 1 round it sets choiceOne and choiceTwo to "null"
+    - iterates the counter +1 
+    - enables to flip new cards by setting the disabled hook to false
