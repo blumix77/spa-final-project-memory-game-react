@@ -1,7 +1,6 @@
 ## memory-game-react
 
 all used pictures are taken from [Unsplash](https://unsplash.com/) and are free to use! 
-thanks to 
 
 #how the code works
 
@@ -25,3 +24,5 @@ thanks to
     - after 1 round it sets choiceOne and choiceTwo to "null"
     - iterates the counter +1 
     - enables to flip new cards by setting the disabled hook to false
+
+have fun!
